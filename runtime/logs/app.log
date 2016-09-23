@@ -1,0 +1,153 @@
+2016-09-22 21:54:09 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class macgyer\yii2materializecss\assets\MaterializeAsset does not exist' in C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\di\Container.php:422
+Stack trace:
+#0 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\di\Container.php(422): ReflectionClass->__construct('macgyer\\yii2mat...')
+#1 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\di\Container.php(362): yii\di\Container->getDependencies('macgyer\\yii2mat...')
+#2 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('macgyer\\yii2mat...', Array, Array)
+#3 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('macgyer\\yii2mat...', Array, Array)
+#4 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\AssetManager.php(264): yii\BaseYii::createObject(Array)
+#5 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('macgyer\\yii2mat...', Array, true)
+#6 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('macgyer\\yii2mat...')
+#7 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('macgyer\\yii2mat...', NULL)
+#8 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#9 C:\xampp\htdocs\YiiExamples\yii-materialize\views\layouts\main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#10 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#13 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#14 C:\xampp\htdocs\YiiExamples\yii-materialize\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#15 [internal function]: app\controllers\SiteController->actionIndex()
+#16 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#19 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('', Array)
+#20 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\YiiExamples\yii-materialize\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2016-09-22 21:54:07 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-fb67c980' => '021c2992-15a0-42f0-a125-4edbd73a7691'
+    '_csrf' => '71a50c4935980c306f423d5018e38dd9b3ba1558bead3018ec3681773bec29b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t75leRAPA2iB3bTehRJ-j2iU-c3vtBFE\";}'
+    'PHPSESSID' => '1ga1934p58u8tuh88tno5isto6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8081/YiiExamples/yii-materialize/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-fb67c980=021c2992-15a0-42f0-a125-4edbd73a7691; _csrf=71a50c4935980c306f423d5018e38dd9b3ba1558bead3018ec3681773bec29b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t75leRAPA2iB3bTehRJ-j2iU-c3vtBFE%22%3B%7D; PHPSESSID=1ga1934p58u8tuh88tno5isto6'
+    'PATH' => 'C:\\Program Files\\NVIDIA Corporation\\PhysX\\Common;C:\\Ruby23\\bin;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Calibre2\\;C:\\Program Files\\ChucK\\/bin;C:\\Program Files\\Skype\\Phone\\;C:\\Program Files\\QuickTime\\QTSystem\\;C:\\xampp\\php;C:\\MAMP\\bin\\php\\php5.6.3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\PuTTY\\;C:\\Users\\VegoMusic\\AppData\\Local\\.meteor\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\VegoMusic\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\xampp\\php'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 8081</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8081'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YiiExamples/yii-materialize/web/index.php'
+    'REMOTE_PORT' => '57001'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/YiiExamples/yii-materialize/web/'
+    'SCRIPT_NAME' => '/YiiExamples/yii-materialize/web/index.php'
+    'PHP_SELF' => '/YiiExamples/yii-materialize/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1474574047.418
+    'REQUEST_TIME' => 1474574047
+]
+2016-09-22 21:54:41 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\yii2-materializecss\assets\MaterializeAsset does not exist' in C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\di\Container.php:422
+Stack trace:
+#0 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\di\Container.php(422): ReflectionClass->__construct('yii\\yii2-materi...')
+#1 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\di\Container.php(362): yii\di\Container->getDependencies('yii\\yii2-materi...')
+#2 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\yii2-materi...', Array, Array)
+#3 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\yii2-materi...', Array, Array)
+#4 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\AssetManager.php(264): yii\BaseYii::createObject(Array)
+#5 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\yii2-materi...', Array, true)
+#6 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\yii2-materi...')
+#7 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\yii2-materi...', NULL)
+#8 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#9 C:\xampp\htdocs\YiiExamples\yii-materialize\views\layouts\main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#10 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#13 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#14 C:\xampp\htdocs\YiiExamples\yii-materialize\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#15 [internal function]: app\controllers\SiteController->actionIndex()
+#16 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#19 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('', Array)
+#20 C:\xampp\htdocs\YiiExamples\yii-materialize\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\YiiExamples\yii-materialize\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2016-09-22 21:54:40 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-fb67c980' => '021c2992-15a0-42f0-a125-4edbd73a7691'
+    '_csrf' => '71a50c4935980c306f423d5018e38dd9b3ba1558bead3018ec3681773bec29b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t75leRAPA2iB3bTehRJ-j2iU-c3vtBFE\";}'
+    'PHPSESSID' => '1ga1934p58u8tuh88tno5isto6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8081/YiiExamples/yii-materialize/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-fb67c980=021c2992-15a0-42f0-a125-4edbd73a7691; _csrf=71a50c4935980c306f423d5018e38dd9b3ba1558bead3018ec3681773bec29b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t75leRAPA2iB3bTehRJ-j2iU-c3vtBFE%22%3B%7D; PHPSESSID=1ga1934p58u8tuh88tno5isto6'
+    'PATH' => 'C:\\Program Files\\NVIDIA Corporation\\PhysX\\Common;C:\\Ruby23\\bin;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Calibre2\\;C:\\Program Files\\ChucK\\/bin;C:\\Program Files\\Skype\\Phone\\;C:\\Program Files\\QuickTime\\QTSystem\\;C:\\xampp\\php;C:\\MAMP\\bin\\php\\php5.6.3;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\PuTTY\\;C:\\Users\\VegoMusic\\AppData\\Local\\.meteor\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\VegoMusic\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\xampp\\php'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 8081</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8081'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/YiiExamples/yii-materialize/web/index.php'
+    'REMOTE_PORT' => '57006'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/YiiExamples/yii-materialize/web/'
+    'SCRIPT_NAME' => '/YiiExamples/yii-materialize/web/index.php'
+    'PHP_SELF' => '/YiiExamples/yii-materialize/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1474574080.933
+    'REQUEST_TIME' => 1474574080
+]
